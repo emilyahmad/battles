@@ -109,3 +109,18 @@ body > article > h1 {
 body > article > p {
     margin: 20px;
 }
+
+/* aside styles */
+body > aside {
+    float: left;
+    width: 768px;
+}
+
+body > aside h1 {
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+aside p {
+    line-height: 1.4em;
+}
