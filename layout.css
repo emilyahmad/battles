@@ -12,3 +12,25 @@ article p:first-of-type::first-line {
     font-size: 1.25em;
     font-variant: small-caps;
 }
+
+article p:first-of-type::first-letter {
+    font-family: serif;
+    font-size: 4em;
+    float: left;
+    line-height: 0.8em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* aside style */
+aside {
+    float: left;
+    width: 768px;
+}
+
+/* map styles */
+div#battleMap {
+    position: relative;
+    margin: 20px auto;
+    
+}
