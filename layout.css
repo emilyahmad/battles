@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* article styles */
+
+article {
+    float: left; /* box model with margins padding and border, use borderline to see box */
+    width: 385px;
+}
+
+article p:first-of-type::first-line {
+    /* first line of first paragraph */
+    font-size: 1.25em;
+    font-variant: small-caps;
+}
