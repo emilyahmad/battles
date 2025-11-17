@@ -45,6 +45,14 @@ a.battleMarkers {
     position: absolute;
 }
 
+/* size and position pins so the bottom-center of the pin sits on the coordinate */
+a.battleMarkers img {
+    width: 28px;
+    height: auto;
+    display: block;
+    transform: translate(-50%, -100%);
+}
+
 a#marker1 {
     top: 57px;
     left: 49px;
@@ -80,7 +88,8 @@ div.mapInfo {
     display: none;
 }
 
-.battleMarker:hover + div.mapInfo {
+/* show the map info when hovering the marker or the info block itself */
+.battleMarkers:hover + div.mapInfo,
+.battleMarkers + div.mapInfo:hover {
     display: block;
-    
 }
