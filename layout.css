@@ -75,3 +75,12 @@ a#marker6 {
     left: 544px;
 }
 
+/* map information styles */
+div.mapInfo {
+    display: none;
+}
+
+.battleMarker:hover + div.mapInfo {
+    display: block;
+    
+}
