@@ -43,3 +43,22 @@ ul {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+html {
+    background-color: #fffbef;
+
+}
+
+/* body styles */
+body {
+    margin: 0 0 auto;
+    background-color: rgb(216, 200, 153);
+    font-family: verdana, geneva, tahoma, san-serif;
+    font-size: 16px;
+    width: 1152px;
+}
+
+body > header > img {
+    display: block;
+    width: 100%
+}
