@@ -60,5 +60,22 @@ body {
 
 body > header > img {
     display: block;
-    width: 100%
+    width: 100%;
+}
+
+/* horizontal navigation list styles */
+nav.horizontal ul li {
+    background-color: rgb(97, 88, 70);
+    display: block;
+    font-size: 15px;
+    float: left;
+    line-height: 30px;
+    height: 30px;
+    width: 192px;
+}
+
+nav.horizontal a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
