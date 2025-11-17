@@ -79,3 +79,33 @@ nav.horizontal a {
     text-align: center;
     text-decoration: none;
 }
+
+.nav.horizontal a:link, nav.horizontal:visited {
+    color: rgb(216,194,157);
+}
+
+.nav.horizontal a:hover, nav.horizontal:active {
+    background-color: rgb(262,56,45);
+}
+
+/* footer styles */
+body > footer {
+    background-color: rgb(52, 56, 45);
+    clear: both;
+    color: rgb(216, 194, 157);
+    font-size: 12px;
+    text-align: center;
+}
+
+/* article style */
+body > article {
+    background-color: rgb(182, 162, 132);
+}
+
+body > article > h1 {
+    font-size: 1.5em;
+}
+
+body > article > p {
+    margin: 20px;
+}
