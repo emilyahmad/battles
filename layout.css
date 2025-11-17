@@ -32,5 +32,46 @@ aside {
 div#battleMap {
     position: relative;
     margin: 20px auto;
-    
+    width: 688px;
 }
+
+img#mapImage {
+    display: block;
+    width: 100%;
+}
+
+/* interactive map styles */
+a.battleMarkers {
+    position: absolute;
+}
+
+a#marker1 {
+    top: 57px;
+    left: 49px;
+}
+
+a#marker2 {
+    top: 194px;
+    left: 358px;
+}
+
+a#marker3 {
+    top: 202px;
+    left: 404px;
+}
+
+a#marker4 {
+    top: 217px;
+    left: 352px;
+}
+
+a#marker5 {
+    top: 229px;
+    left: 498px;
+}
+
+a#marker6 {
+    top: 257px;
+    left: 544px;
+}
+
