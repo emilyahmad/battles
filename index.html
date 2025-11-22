@@ -2,77 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="layout.css">
+    <title>Battle of Harran</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+    </style>
 </head>
 <body>
     <header>
-        <img src="bannerharran.jpg" alt="A bannerharran image for Harran war.">
+        <img src="bannerharran.jpg" alt="A banner image for the Battle of Harran.">
         <nav class="horizontal">
             <ul>
-            <li>Battle of Harran</li>
-            <li>Siege of Jerusalem</li>
-            <li>Siege of Antioch</li>
-            <li>Battle of Nicopolis</li>
-            <li>Battle of Civetot</li>
-            <li>Battle of Civetot</li>
-            <li>Battle of Harran</li>
-            <li>Battle of Harran</li>
-        </ul>
+                <li><a href="#">Battle of Harran</a></li>
+                <li><a href="#">Siege of Jerusalem</a></li>
+                <li><a href="#">Siege of Antioch</a></li>
+                <li><a href="#">Battle of Nicopolis</a></li>
+                <li><a href="#">Battle of Civetot</a></li>
+                <li><a href="#">Battle of Dorylaeum</a></li>
+                <li><a href="#">Battle of Arsuf</a></li>
+                <li><a href="#">Battle of Ager Sanguinis</a></li>
+            </ul>
         </nav>
     </header>
+
     <article>
         <h1>Battle of Harran</h1>
-        <p>Last month (July 15) marked the 918th anniversary of the liberation of the Holy City by the warriors of Christendom on the First Crusade. It was a momentous event, and when news reached Christendom that the Crusaders had succeeded, there was much rejoicing. Those who returned home from the Crusade were feted as heroes and known as “Jerusalemites” for the rest of their lives.</p>
-        <p>The story of how the First Crusade succeeded is filled with personal heroics, sacrifice, and miraculous interventions throughout the journey. The real story has been obscured by the sensationalism and “Hollywood history” of our time, and the story should be set straight.</p>
-        <p>Those who entered the city in that summer of 1099 endured three years of battle, starvation, and disease in order to complete their armed pilgrimage at the Holy Sepulchre of the Lord. Eighty percent of their brothers in arms who marched from Europe with them were dead, missing, or had deserted. Those few who remained succeeded in accomplishing the task given to them by Pope Urban II (r. 1088-1099) in the fall of 1095: the liberation of Jerusalem.</p>
-        <p>Those who entered the city in that summer of 1099 endured three years of battle, starvation, and disease in order to complete their armed pilgrimage at the Holy Sepulchre of the Lord. Eighty percent of their brothers in arms who marched from Europe with them were dead, missing, or had deserted. Those few who remained succeeded in accomplishing the task given to them by Pope Urban II (r. 1088-1099) in the fall of 1095: the liberation of Jerusalem.</p>
+        <p>
+            Last month (July 15) marked the 918th anniversary of the liberation of the Holy City by the warriors of Christendom on the First Crusade. It was a momentous event, and when news reached Christendom that the Crusaders had succeeded, there was much rejoicing. Those who returned home from the Crusade were feted as heroes and known as “Jerusalemites” for the rest of their lives.
+        </p>
+        <p>
+            The story of how the First Crusade succeeded is filled with personal heroics, sacrifice, and miraculous interventions throughout the journey. The real story has been obscured by the sensationalism and “Hollywood history” of our time, and the story should be set straight.
+        </p>
+        <p>
+            Those who entered the city in that summer of 1099 endured three years of battle, starvation, and disease in order to complete their armed pilgrimage at the Holy Sepulchre of the Lord. Eighty percent of their brothers in arms who marched from Europe with them were dead, missing, or had deserted. Those few who remained succeeded in accomplishing the task given to them by Pope Urban II (r. 1088-1099) in the fall of 1095: the liberation of Jerusalem.
+        </p>
+        <p>
+            Those who entered the city in that summer of 1099 endured three years of battle, starvation, and disease in order to complete their armed pilgrimage at the Holy Sepulchre of the Lord. Eighty percent of their brothers in arms who marched from Europe with them were dead, missing, or had deserted. Those few who remained succeeded in accomplishing the task given to them by Pope Urban II (r. 1088-1099) in the fall of 1095: the liberation of Jerusalem.
+        </p>
     </article>
+
     <aside>
         <h1>Map</h1>
-        <p>Hover the pointer over the battle field markers in the map to view more detailed information about the battle.</p>
+        <p>Hover the pointer over the battlefield markers in the map to view more detailed information about each battle.</p>
+
         <div id="battleMap">
-            <img src="harran.jpg" id="mapImage" alt="battle map">
-            <!--    1   -->
-            <a id="marker1" class="battleMarkers" href="#marker1"><img src="pin.png" alt="pin"></a>
+            <img src="harran.jpg" id="mapImage" alt="Battle map">
+
+            <!-- Marker 1 -->
+            <a id="marker1" class="battleMarkers" href="#info1">
+                <img src="pin.png" alt="pin marker">
+            </a>
             <div class="mapInfo" id="info1">
                 <h2>Siege of Jerusalem</h2>
                 <p>The Siege of Jerusalem took place from June 7 to July 15, 1099, during the First Crusade. The climax of the First Crusade, the successful siege saw the Crusaders take Jerusalem from the Fatimid Caliphate and laid the foundations for the Kingdom of Jerusalem.</p>
             </div>
-            <!--    2   -->
-            <a id="marker2" class="battleMarkers" href="#marker2"><img src="pin.png" alt="pin"></a>
+
+            <!-- Marker 2 -->
+            <a id="marker2" class="battleMarkers" href="#info2">
+                <img src="pin.png" alt="pin marker">
+            </a>
             <div class="mapInfo" id="info2">
                 <h2>Siege of Antioch</h2>
-                <p>The Siege of Antioch took place during the First Crusade in 1097 and 1098. The first siege, by the crusaders against the Muslim-held city, lasted from 21 October 1097 to 2 June 1098</p>
+                <p>The Siege of Antioch took place during the First Crusade in 1097 and 1098. The first siege, by the crusaders against the Muslim-held city, lasted from 21 October 1097 to 2 June 1098.</p>
             </div>
-            <!--    3   -->
-            <a id="marker3" class="battleMarkers" href="#marker3"><img src="pin.png" alt="pin"></a>
+
+            <!-- Marker 3 -->
+            <a id="marker3" class="battleMarkers" href="#info3">
+                <img src="pin.png" alt="pin marker">
+            </a>
             <div class="mapInfo" id="info3">
                 <h2>Battle of Dorylaeum</h2>
                 <p>The Battle of Dorylaeum took place during the First Crusade on July 1, 1097, between the crusaders and the Seljuk Turks, near the city of Dorylaeum in Anatolia. It was won by the crusaders.</p>
             </div>
-            <!--    4   -->
-            <a id="marker4" class="battleMarkers" href="#marker4"><img src="pin.png" alt="pin"></a>
+
+            <!-- Marker 4 -->
+            <a id="marker4" class="battleMarkers" href="#info4">
+                <img src="pin.png" alt="pin marker">
+            </a>
             <div class="mapInfo" id="info4">
                 <h2>Battle of Arsuf</h2>
-                <p>The Battle of Arsuf was a battle of the Third Crusade in which Richard I of England defeated the forces of Ayyubid leader Saladin. The battle took place just outside of Arsuf (Arsur), where Saladin attacked Richard's army as it was moving from Acre to Jaffa.</p>
+                <p>The Battle of Arsuf was a battle of the Third Crusade in which Richard I of England defeated the forces of Ayyubid leader Saladin near Arsuf, as he marched from Acre to Jaffa.</p>
             </div>
-            <!--    5   -->
-            <a id="marker5" class="battleMarkers" href="#marker5"><img src="pin.png" alt="pin"></a>
+
+            <!-- Marker 5 -->
+            <a id="marker5" class="battleMarkers" href="#info5">
+                <img src="pin.png" alt="pin marker">
+            </a>
             <div class="mapInfo" id="info5">
                 <h2>Battle of Antioch</h2>
-                <p>The Battle of Antioch (1098) was a military engagement fought between the forces of the Crusaders of Antioch and a Turkish coalition lead the Emir Kerbogha of Mosul as a part of the First Crusade.</p>
+                <p>The Battle of Antioch (1098) was a military engagement fought between the Crusaders of Antioch and a Turkish coalition led by the Emir Kerbogha of Mosul as part of the First Crusade.</p>
             </div>
-            <!--    6   -->
-            <a id="marker6" class="battleMarkers" href="#marker6"><img src="pin.png" alt="pin"></a>
+
+            <!-- Marker 6 -->
+            <a id="marker6" class="battleMarkers" href="#info6">
+                <img src="pin.png" alt="pin marker">
+            </a>
             <div class="mapInfo" id="info6">
                 <h2>Battle of Ager Sanguinis</h2>
-                <p>In the Battle of Ager Sanguinis, also known as the Battle of the Field of Blood, the Battle of Sarmada, or the Battle of Balat, Roger of Salerno's Crusader army of the Principality of Antioch was annihilated by the army of Ilghazi of Mardin, the Artuqid ruler of Aleppo on June 28, 1119.</p>
+                <p>The Battle of Ager Sanguinis, also known as the Battle of the Field of Blood, occurred on June 28, 1119, when Roger of Salerno's Crusader army was defeated by Ilghazi of Mardin.</p>
             </div>
-        </div> <!-- end of battleMap div -->
+        </div>
     </aside>
-<footer>Battles</footer>
+
+    <footer>
+        Battles of the Crusades
+    </footer>
 </body>
 </html>
