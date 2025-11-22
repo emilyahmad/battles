@@ -33,6 +33,7 @@ div#battleMap {
     position: relative;
     margin: 20px auto;
     width: 688px;
+    margin-bottom: 10rem;
 }
 
 img#mapImage {
