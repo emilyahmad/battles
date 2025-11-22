@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* General Styles */
+/* Reset / base styles */
 
 address,
 article,
@@ -46,14 +46,12 @@ ul {
 
 html {
     background-color: #fffbef;
-
 }
 
-/* body styles */
 body {
-    margin: 0 0 auto;
+    margin: 0 auto;  /* center fixed-width layout */
     background-color: rgb(216, 200, 153);
-    font-family: verdana, geneva, tahoma, sans-serif;
+    font-family: "MedievalSharp", cursive;
     font-size: 16px;
     width: 1152px;
 }
@@ -63,15 +61,18 @@ body > header > img {
     width: 100%;
 }
 
-/* horizontal navigation list styles */
-horizontal.nav ul li {
+nav.horizontal ul {
+    list-style: none;
+}
+
+nav.horizontal ul li {
     background-color: rgb(97, 88, 70);
     display: block;
-    font-size: 15px;
+    font-size: 14.25px;
     float: left;
     line-height: 30px;
     height: 30px;
-    width: 192px;
+    width: 144px; /* 8 items * 144px = 1152px */
 }
 
 nav.horizontal a {
@@ -85,38 +86,31 @@ nav.horizontal a:visited {
     color: rgb(216, 194, 157);
 }
 
-
 nav.horizontal a:hover,
 nav.horizontal a:active {
-    background-color: rgb(226,56,45);
+    background-color: rgb(226, 56, 45);
 }
 
-/* footer styles */
-body > footer {
-    background-color: rgb(52, 56, 45);
-    clear: both;
-    color: rgb(216, 194, 157);
-    font-size: 12px;
-    text-align: center;
-}
-
-/* article style */
 body > article {
     background-color: rgb(182, 162, 132);
+    float: left;
+    width: 384px; /* 384 + 768 = 1152 */
 }
 
 body > article > h1 {
     font-size: 1.5em;
+    padding: 20px 20px 0 20px;
+    font-family: "UnifrakturMaguntia", cursive;
 }
 
 body > article > p {
     margin: 20px;
 }
 
-/* aside styles */
 body > aside {
     float: left;
     width: 768px;
+    background-color: rgb(182, 162, 132);
 }
 
 body > aside h1 {
@@ -126,9 +120,9 @@ body > aside h1 {
 
 aside p {
     line-height: 1.4em;
+    margin: 0 20px 20px 20px;
 }
 
-/* interactive map styles */
 div.mapInfo {
     background-color: rgb(144, 24, 26);
     color: rgb(214, 192, 144);
@@ -138,7 +132,20 @@ div.mapInfo {
 
 div.mapInfo h2 {
     background-color: rgb(85, 87, 70);
-    font-size : 22px;
+    font-size: 22px;
     font-weight: normal;
     padding: 10px 20px;
+}
+
+div.mapInfo p {
+    padding: 10px 20px 0 20px;
+}
+
+body > footer {
+    background-color: rgb(52, 56, 45);
+    clear: both;
+    color: rgb(216, 194, 157);
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
 }

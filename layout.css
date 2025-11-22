@@ -1,14 +1,6 @@
 @charset "utf-8";
 
-/* article styles */
-
-article {
-    float: left; /* box model with margins padding and border, use borderline to see box */
-    width: 385px;
-}
-
 article p:first-of-type::first-line {
-    /* first line of first paragraph */
     font-size: 1.25em;
     font-variant: small-caps;
 }
@@ -22,18 +14,10 @@ article p:first-of-type::first-letter {
     margin-bottom: 5px;
 }
 
-/* aside style */
-aside {
-    float: left;
-    width: 768px;
-}
-
-/* map styles */
 div#battleMap {
     position: relative;
-    margin: 20px auto;
+    margin: 20px auto 80px auto;
     width: 688px;
-    margin-bottom: 10rem;
 }
 
 img#mapImage {
@@ -41,12 +25,11 @@ img#mapImage {
     width: 100%;
 }
 
-/* interactive map styles */
 a.battleMarkers {
     position: absolute;
+    cursor: pointer;
 }
 
-/* size and position pins so the bottom-center of the pin sits on the coordinate */
 a.battleMarkers img {
     width: 28px;
     height: auto;
@@ -54,6 +37,7 @@ a.battleMarkers img {
     transform: translate(-50%, -100%);
 }
 
+/* marker coordinates */
 a#marker1 {
     top: 57px;
     left: 49px;
@@ -84,12 +68,10 @@ a#marker6 {
     left: 544px;
 }
 
-/* map information styles */
 div.mapInfo {
     display: none;
 }
 
-/* show the map info when hovering the marker or the info block itself */
 .battleMarkers:hover + div.mapInfo,
 .battleMarkers + div.mapInfo:hover {
     display: block;
