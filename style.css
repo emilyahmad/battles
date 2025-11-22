@@ -64,7 +64,7 @@ body > header > img {
 }
 
 /* horizontal navigation list styles */
-nav.horizontal ul li {
+horizontal.nav ul li {
     background-color: rgb(97, 88, 70);
     display: block;
     font-size: 15px;
@@ -80,11 +80,14 @@ nav.horizontal a {
     text-decoration: none;
 }
 
-.nav.horizontal a:link, nav.horizontal a:visited {
-    color: rgb(216,194,157);
+nav.horizontal a:link,
+nav.horizontal a:visited {
+    color: rgb(216, 194, 157);
 }
 
-nav.horizontal a:hover, nav.horizontal a:active {
+
+nav.horizontal a:hover,
+nav.horizontal a:active {
     background-color: rgb(226,56,45);
 }
 
